@@ -1,0 +1,16 @@
+Redux 
+  - JavaScript Application의 state(상태)를 관리하는 라이브러리
+
+store
+  - data(state)를 넣을 수 있는 장소를 생성
+  - createStore 생성 시 ()안에 reducer를 function으로 전달해야한다.
+
+reducer
+  - data(state)를 바꾸고 수정하는 곳 (reducer에서 return되는 값이 state값이 된다)
+
+* reducer와 modifier가 return하는 것은 app의 data가 된다
+
+store    : 데이터 저장
+reducer  : 데이터 변경 (reducer가 return 하는 모든 것은 데이터가 됨)
+action   : function을 부를 때 사용하는 두번째 parameter
+subcribe : store 안에 있는 변화를 알 수 있게 해줌
